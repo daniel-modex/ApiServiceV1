@@ -10,8 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AppServices\AppServices.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="AppServices">
-      <HintPath>..\..\AppServiceCore\AppServices\bin\Debug\net8.0\AppServices.dll</HintPath>
     </Reference>
   </ItemGroup>
 

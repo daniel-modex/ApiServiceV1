@@ -20,6 +20,7 @@ namespace AppApiService
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
